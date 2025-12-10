@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WindowShift – Simple, fast, beautiful</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav-logo">WindowShift</div>
+      <a id="download-nav" class="nav-link" href="#download">Download</a>
+    </header>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <section>
+          <div class="eyebrow">Focus on what matters</div>
+          <h1 class="title">Better multi-screen experience.</h1>
+          <p class="subtitle">
+            A tiny app that sends any window to another display in the direction you choose, using customizable shortcuts.
+          </p>
+
+          <div class="hero-actions" id="download">
+            <a id="download-main"
+              class="btn-primary"
+              href="https://github.com/simplerick/windowshift-homepage/releases/latest/download/WindowShift-v0.0.7.zip"
+            >
+              Download for macOS
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <strong>Free.</strong> No sign-up. Lightweight, privacy-friendly.
+          </div>
+        </section>
+
+        <!-- <aside>
+          <div class="card">
+            <div class="chip">A quick look</div>
+            <div>
+              <div class="card-heading">Everything in one clean window.</div>
+              <p class="card-text">
+                No clutter, no distractions. Just your content and a few smart shortcuts that stay out of the way.
+              </p>
+            </div>
+
+            <div class="features">
+              <div class="feature">
+                <div class="feature-title">Fast launch</div>
+                <div class="feature-desc">Opens in under a second on most machines.</div>
+              </div>
+              <div class="feature">
+                <div class="feature-title">Offline first</div>
+                <div class="feature-desc">Works even when you’re not connected.</div>
+              </div>
+              <div class="feature">
+                <div class="feature-title">Tiny footprint</div>
+                <div class="feature-desc">&lt; 20 MB install, minimal CPU usage.</div>
+              </div>
+              <div class="feature">
+                <div class="feature-title">Private</div>
+                <div class="feature-desc">No tracking, no analytics, no ads.</div>
+              </div>
+            </div>
+          </div>
+        </aside> -->
+
+
+        <aside class="showcase">
+        <div class="showcase-screen showcase-screen--top">
+            <img class="screen-img" src="assets/screens/top.jpg" alt="">
+            <div class="app-window app-window--top">
+                <div class="window-titlebar">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                </div>
+                <div class="window-body">
+                <div class="window-row"></div>
+                <div class="window-row medium"></div>
+                <div class="window-row short"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-screen showcase-screen--bottom">
+            <img class="screen-img" src="assets/screens/bottom.jpg" alt="">
+            <div class="app-window app-window--bottom">
+                <div class="window-titlebar">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                </div>
+                <div class="window-body">
+                <div class="window-row"></div>
+                <div class="window-row medium"></div>
+                <div class="window-row short"></div>
+                </div>
+            </div>
+        </div>
+
+        </aside>
+
+
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      © 2025 WindowShift. By <a href="https://github.com/simplerick">Simplerick</a>.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('download-nav').href = document.getElementById('download-main').href;
+  </script>
+
+</body>
+</html>
