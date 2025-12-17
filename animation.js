@@ -1,9 +1,12 @@
 const topWindow = document.querySelector(".app-window--top");
 const topScreen = document.querySelector(".showcase-screen--top")
 const botWindow = document.querySelector(".app-window--bottom");
+const hintRowDown = document.querySelector('.hotkey-hint__row--down');
+const hintRowUp   = document.querySelector('.hotkey-hint__row--up');
+
 
 const opts = { 
-  duration: 20000, 
+  duration: 250, 
   easing: "ease-in-out", 
   fill: "both", 
   translate_percent: Math.round(topScreen.offsetHeight/topWindow.offsetHeight * 100)
@@ -36,7 +39,22 @@ const anims = [
 ];
 
 
+let hintTimeout;
+function flashHint(direction) {
+  const row = direction === 'forward' ? hintRowDown : hintRowUp;
+  hintRowDown.classList.remove('is-active');
+  hintRowUp.classList.remove('is-active');
+  
+  row.classList.add('is-active');
+  clearTimeout(hintTimeout);
+  hintTimeout = setTimeout(() => {
+    row.classList.remove('is-active');
+  }, 350);
+}
+
+
 function play(direction) {
+  flashHint(direction);
   const duration = anims[0].effect.getTiming().duration;
   const t = anims[0].currentTime ?? 0;
   const progress = t / duration;
@@ -57,12 +75,12 @@ function play(direction) {
 document.addEventListener('keydown', (e) => {
   if (!(e.ctrlKey && e.metaKey)) return;
 
-  if (e.key === ',') {
+  if (e.key === 'ArrowUp') {
     e.preventDefault();
     play('backward');
   }
 
-  if (e.key === '.') {
+  if (e.key === 'ArrowDown') {
     e.preventDefault();
     play('forward');
   }

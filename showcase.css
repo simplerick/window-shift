@@ -20,7 +20,7 @@
 /* control only width of each screen relative to showcase */
 .showcase-screen--top {
   width: 80%;
-  box-shadow: 0 0 20px 2px rgba(5, 121, 236, 0.5);
+  box-shadow: 0 0 15px 2px rgba(55, 155, 254, 0.35);
 }
 
 .showcase-screen--bottom {

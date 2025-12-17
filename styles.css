@@ -8,7 +8,7 @@
   --text-muted: #6e6e73;
   --accent: #0071e3;
   --accent-soft: rgba(0, 113, 227, 0.08);
-  --border-subtle: #dadada;
+  --border-subtle: #c3c3c3;
   --radius-xl: 28px;
 }
 
@@ -97,18 +97,18 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.3fr);
   gap: 40px;
-  align-items: center;
+  align-items: stretch;
 }
 
-@media (max-width: 800px) {
-  .hero-inner {
-    grid-template-columns: minmax(0, 1fr);
-    text-align: center;
-    .hero-actions {
-      justify-content: center;
-    }
-  }
+.hero-pane {
+  /* display: grid;
+  grid-template-rows: 2fr minmax(0, 1fr);
+  align-items: end; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
 
 /* -------- Hero text -------- */
 
@@ -179,7 +179,7 @@ body {
   background: #0077ee;
 }
 
-.btn-secondary {
+/* .btn-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +197,7 @@ body {
 .btn-secondary:hover {
   background: #ffffff;
   border-color: #c0c0c0;
-}
+} */
 
 /* -------- Card / Features -------- */
 
@@ -278,4 +278,79 @@ body {
 .footer a:hover {
   color: var(--text-main);
   border-bottom-color: var(--text-main);
+}
+
+
+
+/* Hotkeys */
+
+.hotkey-hint {
+  margin-bottom: clamp(25px, 10%, 200px);
+  margin-top: clamp(10px, 34%, 200px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 6px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.hotkey-hint__label {
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.hotkey-hint__row {
+  display: flex;
+  gap: 6px;
+  opacity: 0.82; /* always visible, greyed */
+}
+
+.hotkey-hint__key {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 9px;
+  border-radius: 4px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  background: radial-gradient(circle at 20% 0%, #71727627, #4c506113);
+}
+
+.hotkey-hint__row.is-active {
+  opacity: 1;
+
+  .hotkey-hint__key {
+    color: var(--text-main);
+    border-color: rgb(125, 164, 223);
+    box-shadow: 0 0 5px rgba(87, 152, 255, 0.6);
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+
+  .hotkey-hint {
+    display: none;
+  }
+
+  .subtitle {
+    margin: auto;
+  }
+
+  .hero-pane {
+    display: block;
+  }
 }
