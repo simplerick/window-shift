@@ -286,7 +286,7 @@ body {
 
 .hotkey-hint {
   margin-bottom: clamp(25px, 10%, 200px);
-  margin-top: clamp(10px, 34%, 200px);
+  margin-top: clamp(10px, 30%, 200px);
   position: relative;
   display: flex;
   flex-direction: column;

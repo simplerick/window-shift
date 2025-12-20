@@ -72,8 +72,21 @@ function play(direction) {
 }
 
 
+let autoDir = 'backward';
+let autoTimer = setInterval(() => {
+  play(autoDir);
+  autoDir = autoDir === 'forward' ? 'backward' : 'forward';
+}, 4000);
+
+function stopAutoplay() {
+  clearInterval(autoTimer);
+}
+
+
 document.addEventListener('keydown', (e) => {
   if (!(e.ctrlKey && e.metaKey)) return;
+
+  stopAutoplay();
 
   if (e.key === 'ArrowUp') {
     e.preventDefault();
