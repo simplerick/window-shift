@@ -1,0 +1,4 @@
+*.swift
+*.DS_Store
+*.sh
+*.env

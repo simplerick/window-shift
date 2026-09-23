@@ -11,7 +11,6 @@
   <div class="page">
     <header class="nav">
       <div class="nav-logo">WindowShift</div>
-      <a id="download-nav" class="nav-link" href="#download">Download</a>
       <button id="theme-toggle" class="nav-theme-btn" aria-label="Toggle appearance">
         ◐
       </button>
@@ -24,20 +23,20 @@
             <div class="eyebrow">Focus on what matters</div>
             <h1 class="title">Better multi-screen experience.</h1>
             <p class="subtitle">
-              A tiny app that sends any window to another display in the direction you choose, using customizable shortcuts.
+              A tiny app that moves windows between connected displays based on your display layout, using customizable shortcuts.
             </p>
 
-            <div class="hero-actions" id="download">
-              <a id="download-main"
-                class="btn-primary"
-                href="https://github.com/simplerick/windowshift-homepage/releases/latest/download/WindowShift-v0.0.7.zip"
-              >
-                Download for macOS
+            <div class="hero-actions" id="download" aria-live="polite" aria-atomic="true">
+              <a id="download-button" class="btn-primary" hidden>
+                <span class="download-label">Download for macOS 12+</span>
               </a>
+              <div id="download-unavailable" class="download-unavailable" hidden>
+                No releases are currently available.
+              </div>
             </div>
 
             <div class="hero-meta">
-              <strong>Free.</strong> No sign-up. Lightweight, privacy-friendly.
+              <strong>Free.</strong> Native, lightweight, no telemetry.
             </div>
           </section>
 
@@ -133,9 +132,7 @@
     </footer>
   </div>
 
-  <script>
-    document.getElementById('download-nav').href = document.getElementById('download-main').href;
-  </script>
+  <script src="latest-url.js"></script>
   <script src="animation.js"></script>
   <script src="appearance.js"></script>
 </body>

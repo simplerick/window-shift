@@ -1,3 +1,3 @@
-# WindowShift Homepage
+# WindowShift
 
-[simplerick.github.io/windowshift-homepage](https://simplerick.github.io/windowshift-homepage)
+[Homepage](https://simplerick.github.io/window-shift)
