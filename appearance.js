@@ -6,8 +6,12 @@
 
   root.dataset.theme = stored ?? (systemDark ? 'dark' : 'light');
 
+  let btnRotation = 0;
+
   btn.onclick = () => {
     root.dataset.theme =
       root.dataset.theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', root.dataset.theme);
+    btnRotation += 180;
+    btn.style.transform = `rotate(${btnRotation}deg)`;
   };
