@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="./assets/icons/icon_small.svg">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="showcase.css" />
+  <link rel="stylesheet" href="modal_window.css" />
 </head>
 <body>
   <div class="page">
@@ -31,6 +32,7 @@
               <a id="download-button" class="btn-primary" hidden>
                 <span class="download-label">Download for macOS 12+</span>
               </a>
+              <a class="btn-warning" href="#gatekeeper-warning" title="The app is not notarized">⚠</a>
               <div id="download-unavailable" class="download-unavailable" hidden>
                 No releases are currently available.
               </div>
@@ -133,8 +135,17 @@
     </footer>
   </div>
 
+  <div id="gatekeeper-warning" class="modal" aria-label="Gatekeeper warning">
+    <a class="modal__backdrop" href="#" aria-label="Close warning"></a>
+    <div class="modal__frame">
+      <div class="modal-content" data-include="gatekeeper_warning.html"></div>
+    </div>
+  </div>  
+  </div>
+
   <script src="latest-url.js"></script>
   <script src="animation.js"></script>
   <script src="appearance.js"></script>
+  <script src="include.js"></script>
 </body>
 </html>

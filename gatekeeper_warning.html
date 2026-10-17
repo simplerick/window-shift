@@ -1,0 +1,51 @@
+
+<div class="modal__intro">
+
+  <h2 class="modal__title">The app is not notarized.</h2>
+
+  <p class="modal__text">
+    This does not mean that the app is malfunctioning or contains anything harmful.
+    The reason is simply that Apple notarization requires a paid Apple Developer Program membership,
+    and at the moment I do not have the spare money to pay for that subscription.
+  </p>
+
+  <p class="modal__text modal__text--muted">
+    To bypass Gatekeeper and run the app, follow the steps below. The labels may vary depending on the macOS version.
+  </p>
+
+</div>
+
+<div class="warning-steps">
+  <figure class="warning-step">
+    <figcaption>
+      <span class="warning-step__number">1</span>
+      <div>
+        <strong>Try to open WindowShift</strong>
+        <p>Open the app once. macOS may tell you it cannot be opened because the developer cannot be verified.</p>
+      </div>
+    </figcaption>
+    <img src="assets/gatekeeper_bypass/1.png" alt="macOS warning shown when WindowShift is opened for the first time">
+  </figure>
+
+  <figure class="warning-step">
+    <figcaption>
+      <span class="warning-step__number">2</span>
+      <div>
+        <strong>Open Privacy &amp; Security</strong>
+        <p>Go to System Settings → Privacy &amp; Security. Scroll down to the WindowShift message and click “Open Anyway”.</p>
+      </div>
+    </figcaption>
+    <img src="assets/gatekeeper_bypass/2.png" alt="Privacy and Security settings with the Open Anyway button">
+  </figure>
+
+  <figure class="warning-step">
+    <figcaption>
+      <span class="warning-step__number">3</span>
+      <div>
+        <strong>Confirm that you want to open it</strong>
+        <p>macOS will ask once more. Click “Open”. After that, WindowShift should launch normally.</p>
+      </div>
+    </figcaption>
+    <img src="assets/gatekeeper_bypass/3.png" alt="Final macOS confirmation dialog with the Open button">
+  </figure>
+</div>
