@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>WindowShift</title>
+
+    <item>
+      <title>0.1.0</title>
+      <pubDate>Sat, 17 Oct 2026 07:58:12 +0000</pubDate>
+      <releaseNotes><![CDATA[
+Added updater
+Set up CI
+      ]]></releaseNotes>
+      <minimumSystemVersion>12.0</minimumSystemVersion>
+      <enclosure version="0.1.0"
+                 url="https://github.com/simplerick/window-shift/releases/download/v0.1.0/WindowShift-v0.1.0.zip"
+                 edSignature="RtH+FDvx6m/FnmibI7kpXra1ykIyMwnBunvRc+haWvr0fWFHI0nQM7KXl3QdreBJ8JOqI9Nh+WmUXdWdgjnqCw=="
+                 length="437719"
+                 type="application/zip" />
+    </item>
+
+  </channel>
+</rss>
