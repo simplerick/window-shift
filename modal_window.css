@@ -56,7 +56,7 @@ body:has(.modal:target) {
 .modal__frame {
   position: relative;
   width: min(1120px, 80%);
-  height: min(800px, 90vh);
+  max-height: min(800px, 90vh);
   overflow-x: hidden;
   overflow-y: auto;
   border: 1px solid var(--border-subtle);
@@ -149,8 +149,8 @@ body:has(.modal:target) {
 
 .markdown {
   width: min(500px, 100%);
-  height: min(700px, 90vh);
-  padding: 20px;
+  max-height: min(700px, 90vh);
+  padding: 30px;
 }
 
 .markdown pre {
