@@ -1,7 +1,8 @@
 WindowShift License
-Effective date: October 17, 2026
+Effective date: October 17, 2026.
 Copyright © 2025 Simplerick (Artem Mikhaylov).
 All rights reserved.
+
 
 1. Scope
 

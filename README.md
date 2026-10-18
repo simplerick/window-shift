@@ -8,3 +8,21 @@
 </div>
 
 <br clear="left">
+
+
+<br>
+<br>
+<br>
+
+
+<table><tbody>
+  <tr>
+    <td>Website code (this repo) license</td>
+    <td><a href="LICENSE.md">LICENSE.MD</a></td>
+  </tr>
+  <tr>
+    <td>WindowShift App license</td>
+    <td><a href="WINDOWSHIFT_LICENSE.txt">WINDOWSHIFT_LICENSE.txt</a></td>
+  </tr>
+</tbody>
+</table>
