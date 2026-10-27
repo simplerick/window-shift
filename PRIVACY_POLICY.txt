@@ -1,0 +1,31 @@
+WindowShift Privacy Policy  
+Effective date: October 27, 2026
+
+
+1. WindowShift Application
+
+WindowShift does not collect, transmit, or store personal data, usage statistics, analytics, or telemetry.
+
+The application operates locally on your device and does not require an account.
+
+2. Website
+
+The WindowShift website may collect limited technical information necessary to operate, protect, and understand the usage of the website.
+
+The website uses Cloudflare services, including web analytics. Cloudflare may process technical information associated with requests to the website in accordance with its own privacy policy.
+
+WindowShift does not use this information to identify individual visitors.
+
+3. Third-Party Services
+
+The website may contain links to third-party websites, including GitHub. Those websites are governed by their own privacy policies and practices.
+
+4. Changes
+
+This Privacy Policy may change in the future. The current version will be published on this page.
+
+5. Contact
+
+Questions regarding this Privacy Policy may be directed to the WindowShift author through:
+
+https://github.com/simplerick
