@@ -120,7 +120,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px 40px;
+  padding: 40px 24px 35px;
 }
 
 .hero-inner {
@@ -331,15 +331,14 @@ body {
 /* -------- Footer -------- */
 
 .footer {
-  padding: 2px 15px 10px;
+  padding: 0px 15px 18px;
   font-size: 12px;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .footer-links {
-  grid-column: 2;
   color: var(--text-muted);
   display: flex;
   justify-content: center;
@@ -363,8 +362,18 @@ body {
 }
 
 .badge {
-  grid-column: 3;
-  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 8px 15px 20px;
+}
+
+.badge img {
+  display: block;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -433,15 +442,7 @@ body {
   }
 
   .footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .footer-links,
-  .badge {
-    grid-column: 1;
-    justify-self: center;
+    margin-top: 25px;
   }
 
   .hotkey-hint {
@@ -454,5 +455,9 @@ body {
 
   .hero-pane {
     display: block;
+  }
+
+  .view-counter {
+    display: none;
   }
 }
