@@ -4,6 +4,24 @@
     <title>WindowShift</title>
 
     <item>
+      <title>0.1.4</title>
+      <pubDate>Tue, 10 Nov 2026 11:34:21 +0000</pubDate>
+      <releaseNotes><![CDATA[
+Improved responsiveness: windows can be redirected during  transitions
+Improved stability
+Added hotkey reassignment and removal support
+Added "Restore Defaults" button to settings
+      ]]></releaseNotes>
+      <minimumSystemVersion>12.0</minimumSystemVersion>
+      <enclosure version="0.1.4"
+                 url="https://github.com/simplerick/window-shift/releases/download/v0.1.4/WindowShift-v0.1.4.zip"
+                 edSignature="nyKQdr7KPyHm5NufEz4KBOyeUIrT8ZQ5+wERfCPleA+rCQBPz7kkec6xksHaoZXWI7OIzYGBTqPTdM2PXre1Ag=="
+                 length="478530"
+                 type="application/zip" />
+    </item>
+
+
+    <item>
       <title>0.1.3</title>
       <pubDate>Tue, 03 Nov 2026 11:22:19 +0000</pubDate>
       <releaseNotes><![CDATA[
