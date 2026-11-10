@@ -7,10 +7,10 @@
       <title>0.1.3</title>
       <pubDate>Tue, 03 Nov 2026 11:22:19 +0000</pubDate>
       <releaseNotes><![CDATA[
-added auto-start option
-implemented resizing modes
-improved stability of current screen retrieval
-unified settings views
+Added auto-start option
+Implemented resizing modes
+Improved stability of current screen retrieval
+Unified settings views
       ]]></releaseNotes>
       <minimumSystemVersion>12.0</minimumSystemVersion>
       <enclosure version="0.1.3"
@@ -25,9 +25,9 @@ unified settings views
       <title>0.1.2</title>
       <pubDate>Tue, 27 Oct 2026 02:35:16 +0000</pubDate>
       <releaseNotes><![CDATA[
-improved stability of fullscreen transitions
-fixed same-process window crash
-notarized the app
+Improved stability of fullscreen transitions
+Fixed same-process window crash
+Notarized the app
       ]]></releaseNotes>
       <minimumSystemVersion>12.0</minimumSystemVersion>
       <enclosure version="0.1.2"
