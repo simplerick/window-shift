@@ -461,3 +461,14 @@ body {
     display: none;
   }
 }
+
+
+/* non retina displays */
+@media (min-width: 2500px) and (max-resolution: 1.5dppx) {
+  body {
+    zoom: 2;
+  }
+  .page {
+    min-height: 50vh;
+  }
+}
