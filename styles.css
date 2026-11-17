@@ -468,11 +468,12 @@ body {
 
 
 /* non retina displays */
-@media (min-width: 2500px) and (max-resolution: 1.5dppx) {
-  body {
-    zoom: 2;
-  }
-  .page {
-    min-height: 50vh;
-  }
+@media (min-width: 2500px) and (max-resolution: 1.24dppx) {
+  body { zoom: 2; }
+  .page { min-height: 50vh; }
+}
+
+@media (min-width: 1920px) and (min-resolution: 1.25dppx) and (max-resolution: 1.74dppx) {
+  body { zoom: 1.5; }
+  .page { min-height: 66.667vh; }
 }
