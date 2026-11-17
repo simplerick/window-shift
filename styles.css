@@ -370,6 +370,10 @@ body {
   padding: 8px 15px 20px;
 }
 
+.badge:not(:has(a)) {
+  display: none;
+}
+
 .badge img {
   display: block;
   border-radius: 6px;
